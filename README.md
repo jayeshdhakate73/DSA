@@ -1,2 +1,2 @@
 # DSA
-answers to dsa tough problems 
+easy solutions
