@@ -17,6 +17,8 @@ public:
                 fast=fast->next;
                 slow=slow->next; 
                 if(fast==slow){
+                    //at some point fast=slow if there is a cycle  
+                    //cycle present hai 
                     return true;
                 }
             }
