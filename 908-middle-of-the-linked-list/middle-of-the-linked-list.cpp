@@ -13,19 +13,13 @@ public:
     ListNode* middleNode(ListNode* head) {
         ListNode* slow=head;
         ListNode* fast=head;
-
         while(fast!=NULL){
-            //fast ko 1 step aage kro
-            fast = fast->next;
-            //check kro ki fast null hai kya 1 step ke baad
+            fast=fast->next;
             if(fast!=NULL){
-                fast=fast->next;
-                //ab fast ke 2 steps complete ho gye 
-                //ab slow ko bhi 1 step aage badhao 
-                slow = slow->next;
+                fast = fast->next;
+                slow=slow->next;
             }
         }
         return slow;
-        
     }
 };
