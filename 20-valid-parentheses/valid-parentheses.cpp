@@ -25,7 +25,7 @@ public:
                 return false;
             }
         }
-        if(st.empty()){
+        if(st.size()==0){
             return true;
         }
         return false;
